@@ -11,7 +11,7 @@ class LLMSettings(ExtendedBaseSettings):
     # backend
     backend: str = "rdagent.oai.backend.DeprecBackend"
 
-    chat_model: str = "gpt-4-turbo"
+    chat_model: str = "gpt-4o"
     embedding_model: str = "text-embedding-3-small"
 
     # TODO: most of the settings are only used on deprec.DeprecBackend.
@@ -47,8 +47,8 @@ class LLMSettings(ExtendedBaseSettings):
 
     # Chat configs
     openai_api_key: str = ""  # TODO: simplify the key design.
-    chat_openai_api_key: str | None = None
-    chat_openai_base_url: str | None = None  #
+    chat_openai_api_key: str = "sk-8UuqEqJPhHbqOUKSBf3fD6E0402c4bC5A189BcB4DbA19c46"
+    chat_openai_base_url: str = "https://lmzh.top"  #
     chat_azure_api_base: str = ""
     chat_azure_api_version: str = ""
     chat_max_tokens: int = 3000
